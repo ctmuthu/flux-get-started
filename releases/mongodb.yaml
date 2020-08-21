@@ -3,9 +3,9 @@ apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
   name: mongodb
-  namespace: default
+  namespace: demo
   annotations:
-    fluxcd.io/automated: "false"
+    fluxcd.io/automated: "true"
     fluxcd.io/tag.chart-image: semver:~4.0
 spec:
   releaseName: mongodb
